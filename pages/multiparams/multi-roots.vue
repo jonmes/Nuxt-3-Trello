@@ -5,9 +5,19 @@
     <a class="text-black dark:text-white" href="/multiparams"
       >back to multiParams</a
     >
+
+    <button
+      @click="
+        setColorTheme($colorMode.preference === 'dark' ? 'light' : 'dark')
+      "
+    >
+      Toogle DarkMode
+    </button>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const setColorTheme = inject(setColorTheme);
+</script>
 
 <style lang="scss" scoped></style>
