@@ -3,7 +3,7 @@
     <h1 class="text-7xl">MultiParams Index Page.</h1>
     <h2 class="text-7xl">Hello</h2>
     <button
-      class="bg-green-400 px-4 py-2 rounded-3xl"
+      class="bg-green-400 px-4 py-2 rounded-lg"
       @click="
         setColorTheme($colorMode.preference === 'dark' ? 'light' : 'dark')
       "
@@ -14,7 +14,6 @@
 </template>
 
 <script setup>
-import { inject } from 'vue';
 const setColorTheme = inject("setColorTheme");
 </script>
 
