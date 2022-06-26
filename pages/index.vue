@@ -158,18 +158,18 @@ const setColorTheme = inject("setColorTheme");
       </div>
     </section>
     <section>
-      <div
-        class="flex flex-col justify-center max-w-[1263px] mx-20 px-4 pt-4 mb-12"
-      >
-        <h1 class="w-5/12 text-4xl font-medium mb-2">
-          Features to help your team succeed
-        </h1>
-        <p class="text-xl w-8/12">
-          Powering a productive team means using a powerful tool (and plenty of
-          snacks). From meetings and projects to events and goal setting,
-          Trello’s intuitive features give any team the ability to quickly set
-          up and customize workflows for just about anything.
-        </p>
+      <div class="flex justify-center">
+        <div class="max-w-[1263px] mx-20 px-4 pt-4 mb-12">
+          <h1 class="text-4xl font-medium w-5/12 mb-3">
+            Features to help your team succeed
+          </h1>
+          <p class="text-xl w-6/12">
+            Powering a productive team means using a powerful tool (and plenty
+            of snacks). From meetings and projects to events and goal setting,
+            Trello’s intuitive features give any team the ability to quickly set
+            up and customize workflows for just about anything.
+          </p>
+        </div>
       </div>
     </section>
   </div>
