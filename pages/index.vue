@@ -7,6 +7,7 @@ import johnDeer from "@/assets/svg/johnDeere.svg?url";
 import grand from "@/assets/svg/Grand-Hyatt.svg?url";
 import google from "@/assets/svg/Google.svg?url";
 import visa from "@/assets/svg/Visa.svg?url";
+import view from "@/assets/svg/view.svg?url";
 
 const setColorTheme = inject("setColorTheme");
 </script>
@@ -157,9 +158,9 @@ const setColorTheme = inject("setColorTheme");
         </div>
       </div>
     </section>
-    <section>
-      <div class="flex justify-center">
-        <div class="max-w-[1263px] mx-20 px-4 pt-4 mb-12">
+    <section class="flex mt-20 justify-center">
+      <div class="max-w-[1263px] mx-20">
+        <div class="px-4 pt-4 mb-12">
           <h1 class="text-4xl font-medium w-5/12 mb-3">
             Features to help your team succeed
           </h1>
@@ -169,6 +170,25 @@ const setColorTheme = inject("setColorTheme");
             Trello’s intuitive features give any team the ability to quickly set
             up and customize workflows for just about anything.
           </p>
+        </div>
+
+        <div class="flex justify-between">
+          <div class="flex-1">
+            <img :src="view" class="object-contain" />
+          </div>
+          <div class="flex-1">
+            <h4>CHOOSE A VIEW</h4>
+            <h2 class="text-4xl font-medium">
+              The board is just the beginning
+            </h2>
+            <p>
+              Lists and cards are the building blocks of organizing work on a
+              Trello board. Grow from there with task assignments, timelines,
+              productivity metrics, calendars, and more.
+            </p>
+
+            <button class="text-2xl font-medium">+ Learn more</button>
+          </div>
         </div>
       </div>
     </section>
