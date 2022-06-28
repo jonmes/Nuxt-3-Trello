@@ -3,7 +3,7 @@ import tag from "@/assets/svg/tag.svg?url";
 import compass from "@/assets/svg/compass.svg?url";
 import solution from "@/assets/svg/solutions.svg?url";
 import coinbase from "@/assets/svg/coinbase.svg?url";
-import johnDeer from "@/assets/svg/johndeere.svg?url";
+import johnDeer from "@/assets/svg/johnDeere.svg?url";
 import grand from "@/assets/svg/Grand-Hyatt.svg?url";
 import google from "@/assets/svg/Google.svg?url";
 import visa from "@/assets/svg/Visa.svg?url";
