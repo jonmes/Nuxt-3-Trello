@@ -8,6 +8,7 @@ import grand from "@/assets/svg/Grand-Hyatt.svg?url";
 import google from "@/assets/svg/Google.svg?url";
 import visa from "@/assets/svg/Visa.svg?url";
 import view from "@/assets/svg/view.svg?url";
+import backImg from "@/assets/svg/card-back.svg";
 
 const setColorTheme = inject("setColorTheme");
 </script>
@@ -40,6 +41,172 @@ const setColorTheme = inject("setColorTheme");
         </div>
       </div>
     </section>
+
+    <section>
+      <div class="flex justify-center">
+        <div class="max-w-[1263px] mx-20 flex justify-center flex-wrap">
+          <hr class="border-b-[0.3px] border-opacity-20 border-gray-400 my-4" />
+          <div class="flex flex-col pt-12 pb-4 px-4">
+            <h1 class="text-4xl font-semibold text-center">
+              It’s more than work. It’s a way of working together.
+            </h1>
+            <p class="text-xl font-normal text-center px-6">
+              Start with a Trello board, lists, and cards. Customize and expand
+              with more features as your teamwork grows. Manage projects,
+              organize tasks, and build team spirit—all in one place.
+            </p>
+            <button
+              class="mt-10 self-center text-base text-white rounded-md px-4 py-3 bg-[#0066ff] hover:bg-[#0747a6]"
+            >
+              Start doing
+            </button>
+            <div class="flex justify-center p-4">
+              <img
+                src="/images/board.png"
+                class="object-contain max-w-[951px]"
+              />
+            </div>
+            <p class="text-xl mb-6 text-center">
+              Join over 2,000,000 teams worldwide that are using Trello to get
+              more done.
+            </p>
+          </div>
+          <div class="flex self-center flex-wrap justify-center items-center">
+            <div class="w-3/12 flex justify-center">
+              <img :src="coinbase" alt="coinbase" />
+            </div>
+            <div class="w-3/12 flex justify-center">
+              <img :src="johnDeer" alt="johnDeer" />
+            </div>
+            <div class="w-3/12 flex justify-center">
+              <img :src="grand" alt="Grand Hyatt" />
+            </div>
+            <div class="w-3/12 flex justify-center">
+              <img :src="google" alt="Google" />
+            </div>
+            <div class="w-3/12 flex justify-center">
+              <img :src="visa" alt="Visa" />
+            </div>
+            <div class="w-3/12 flex justify-center">
+              <img
+                src="/images/Zoom.png"
+                alt="Zoom"
+                class="max-h-20 object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="flex mt-20 justify-center">
+      <div class="max-w-[1263px] mx-20">
+        <div class="px-4 pt-4 mb-12">
+          <h1 class="text-4xl font-medium w-5/12 mb-3">
+            Features to help your team succeed
+          </h1>
+          <p class="text-xl w-6/12 text-gray-500">
+            Powering a productive team means using a powerful tool (and plenty
+            of snacks). From meetings and projects to events and goal setting,
+            Trello’s intuitive features give any team the ability to quickly set
+            up and customize workflows for just about anything.
+          </p>
+        </div>
+        <div class="h-16"></div>
+        <div class="flex justify-between">
+          <div class="flex-1 max-w-[475px] p-4">
+            <img :src="view" class="max-w-[415px] object-contain" />
+          </div>
+          <div class="flex-1 p-4">
+            <div class="max-w-[665px]">
+              <h4 class="font-medium mb-2">CHOOSE A VIEW</h4>
+              <h2 class="text-4xl font-medium pb-4 mb-2">
+                The board is just the beginning
+              </h2>
+              <p class="mb-6 text-xl text-gray-500">
+                Lists and cards are the building blocks of organizing work on a
+                Trello board. Grow from there with task assignments, timelines,
+                productivity metrics, calendars, and more.
+              </p>
+
+              <button class="text-2xl font-medium">+ Learn more</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="h-16"></div>
+        <div class="flex justify-between flex-row-reverse">
+          <div class="flex-1 max-w-[475px] p-4">
+            <img :src="backImg" class="max-w-[340px] object-contain" />
+          </div>
+          <div class="flex-1 p-4">
+            <div class="max-w-[665px]">
+              <h4 class="font-medium mb-2">DIVE INTO THE DETAILS</h4>
+              <h2 class="text-4xl font-medium pb-4 mb-2">
+                Cards contain everything you need
+              </h2>
+              <p class="mb-6 text-xl text-gray-500">
+                Trello cards are your portal to more organized work—where every
+                single part of your task can be managed, tracked, and shared
+                with teammates. Open any card to uncover an ecosystem of
+                checklists, due dates, attachments, conversations, and more.
+              </p>
+
+              <button class="text-2xl font-medium">+ Learn more</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="h-16"></div>
+        <div class="flex justify-between">
+          <div class="flex-1 max-w-[475px] p-4">
+            <img
+              src="/images/automation.png"
+              class="max-w-[442px] object-contain"
+            />
+          </div>
+          <div class="flex-1 p-4">
+            <div class="max-w-[665px]">
+              <h4 class="font-medium mb-2">MEET YOUR NEW BUTLER</h4>
+              <h2 class="text-4xl font-medium pb-4 mb-2">No-code automation</h2>
+              <p class="mb-6 text-xl text-gray-500">
+                Let the robots do the work—so your team can focus on work that
+                matters. With Trello’s built-in automation, Butler, reduce the
+                number of tedious tasks (and clicks) on your project board by
+                harnessing the power of automation across your entire team.
+              </p>
+
+              <button class="text-2xl font-medium">+ Learn more</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="h-16"></div>
+        <div class="flex flex-row-reverse justify-between">
+          <div class="flex-1 max-w-[475px] p-4">
+            <img
+              src="/images/power-ups.png"
+              class="max-w-[375px] object-contain"
+            />
+          </div>
+          <div class="flex-1 p-4">
+            <div class="max-w-[665px]">
+              <h4 class="font-medium mb-2">POWER-UPS</h4>
+              <h2 class="text-4xl font-medium pb-4 mb-2">
+                Integrate top work tools
+              </h2>
+              <p class="mb-6 text-xl text-gray-500">
+                Easily connect the apps your team already uses into your Trello
+                workflow, or add a Power-Up that helps fine-tune one specific
+                need. With hundreds of Power-Ups available, your team’s workflow
+                wishes are covered.
+              </p>
+              <button class="text-2xl font-medium">+ Learn more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section>
       <div class="flex justify-center">
         <div class="max-w-[1263px] mx-20">
@@ -98,97 +265,9 @@ const setColorTheme = inject("setColorTheme");
             <div></div>
             <div></div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="flex justify-center">
-        <div class="max-w-[1263px] mx-20 flex flex-wrap">
-          <hr class="border-b-[0.3px] border-opacity-20 border-gray-400 my-4" />
-          <div class="flex flex-col pt-12 pb-4 px-4">
-            <h1 class="text-4xl font-semibold text-center">
-              It’s more than work. It’s a way of working together.
-            </h1>
-            <p class="text-xl font-normal text-center">
-              Start with a Trello board, lists, and cards. Customize and expand
-              with more features as your teamwork grows. Manage projects,
-              organize tasks, and build team spirit—all in one place.
-            </p>
-            <button
-              class="mt-10 self-center text-base text-white rounded-md px-4 py-3 bg-[#0066ff] hover:bg-[#0747a6]"
-            >
-              Start doing
-            </button>
-            <div class="flex justify-center p-4">
-              <img
-                src="/images/board.png"
-                class="object-contain max-w-[951px]"
-              />
-            </div>
-            <p class="text-xl mb-6 text-center">
-              Join over 2,000,000 teams worldwide that are using Trello to get
-              more done.
-            </p>
-          </div>
-          <div class="flex flex-wrap justify-center items-center">
-            <div class="w-3/12 flex justify-center">
-              <img :src="coinbase" alt="coinbase" />
-            </div>
-            <div class="w-3/12 flex justify-center">
-              <img :src="johnDeer" alt="johnDeer" />
-            </div>
-            <div class="w-3/12 flex justify-center">
-              <img :src="grand" alt="Grand Hyatt" />
-            </div>
-            <div class="w-3/12 flex justify-center">
-              <img :src="google" alt="Google" />
-            </div>
-            <div class="w-3/12 flex justify-center">
-              <img :src="visa" alt="Visa" />
-            </div>
-            <div class="w-3/12 flex justify-center">
-              <img
-                src="/images/Zoom.png"
-                alt="Zoom"
-                class="max-h-20 object-contain"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="flex mt-20 justify-center">
-      <div class="max-w-[1263px] mx-20">
-        <div class="px-4 pt-4 mb-12">
-          <h1 class="text-4xl font-medium w-5/12 mb-3">
-            Features to help your team succeed
-          </h1>
-          <p class="text-xl w-6/12">
-            Powering a productive team means using a powerful tool (and plenty
-            of snacks). From meetings and projects to events and goal setting,
-            Trello’s intuitive features give any team the ability to quickly set
-            up and customize workflows for just about anything.
-          </p>
-        </div>
-
-        <div class="flex justify-between">
-          <div class="flex-1">
-            <img :src="view" class="object-contain" />
-          </div>
-          <div class="flex-1">
-            <h4>CHOOSE A VIEW</h4>
-            <h2 class="text-4xl font-medium">
-              The board is just the beginning
-            </h2>
-            <p>
-              Lists and cards are the building blocks of organizing work on a
-              Trello board. Grow from there with task assignments, timelines,
-              productivity metrics, calendars, and more.
-            </p>
-
-            <button class="text-2xl font-medium">+ Learn more</button>
-          </div>
+          <hr
+            class="border-b-[0.3px] border-opacity-20 border-gray-400 my-10"
+          />
         </div>
       </div>
     </section>
