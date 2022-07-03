@@ -7,10 +7,43 @@ import johnDeer from "@/assets/svg/johnDeere.svg?url";
 import grand from "@/assets/svg/Grand-Hyatt.svg?url";
 import google from "@/assets/svg/Google.svg?url";
 import visa from "@/assets/svg/Visa.svg?url";
+import zoom from "@/assets/svg/Zoom.svg?url";
 import view from "@/assets/svg/view.svg?url";
 import backImg from "@/assets/svg/card-back.svg";
+import { gsap } from "gsap";
 
 const setColorTheme = inject("setColorTheme");
+const icons = ref(null);
+const pageShow = ref(false);
+const tobeShown = ref(null)
+const companys = [
+  { icn: coinbase, alt: "coinbase" },
+  { icn: johnDeer, alt: "johnDeer" },
+  { icn: grand, alt: "grand" },
+  { icn: google, alt: "google" },
+  { icn: visa, alt: "visa" },
+  { icn: zoom, cls: "max-h-20 object-contain", alt: "zoom" },
+];
+
+onMounted(() => {
+  pageShow.value = true;
+});
+
+const beforeEnter = (el) => {
+  el.style.opacity = 0;
+  el.style.transform = "translateY(100px)";
+};
+
+const enter = (el, done) => {
+  gsap.to(el, {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    onComplete: done,
+    delay: el.dataset.index * 0.2,
+  });
+};
+
 </script>
 <template>
   <div>
@@ -71,30 +104,26 @@ const setColorTheme = inject("setColorTheme");
               more done.
             </p>
           </div>
-          <div class="flex self-center flex-wrap justify-center items-center">
-            <div class="w-3/12 flex justify-center">
-              <img :src="coinbase" alt="coinbase" />
-            </div>
-            <div class="w-3/12 flex justify-center">
-              <img :src="johnDeer" alt="johnDeer" />
-            </div>
-            <div class="w-3/12 flex justify-center">
-              <img :src="grand" alt="Grand Hyatt" />
-            </div>
-            <div class="w-3/12 flex justify-center">
-              <img :src="google" alt="Google" />
-            </div>
-            <div class="w-3/12 flex justify-center">
-              <img :src="visa" alt="Visa" />
-            </div>
-            <div class="w-3/12 flex justify-center">
-              <img
-                src="/images/Zoom.png"
-                alt="Zoom"
-                class="max-h-20 object-contain"
-              />
-            </div>
-          </div>
+          <TransitionGroup
+            appear
+            :css="false"
+            @before-enter="beforeEnter"
+            @enter="enter"
+            tag="ul"
+            name="list"
+            class="flex self-center flex-wrap justify-center items-center"
+          >
+            <li
+              class="w-3/12 flex justify-center"
+              v-for="(icon, i) in companys"
+              :key="i"
+              :data-index="i"
+              v-if="pageShow"
+              ref="tobeShown"
+            >
+              <img :src="icon.icn" :class="icon?.cls" :alt="icon.alt" />
+            </li>
+          </TransitionGroup>
         </div>
       </div>
     </section>
